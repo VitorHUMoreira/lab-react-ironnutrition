@@ -18,7 +18,7 @@ function AddFoodForm({ foods, setFoods }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    let updatedFoods = [...foods, form];
+    let updatedFoods = [form, ...foods];
 
     setFoods(updatedFoods);
 
